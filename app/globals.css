@@ -1,0 +1,311 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 10s linear infinite;
+  transform-origin: center;
+}
+
+/* Optional: make the plane tilt dynamically */
+.landing-hero-plane {
+  transform-origin: center;
+  animation: planeTilt 10s linear infinite;
+}
+
+@keyframes planeTilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@keyframes curve1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(40px, -30px) rotate(10deg);
+  }
+  50% {
+    transform: translate(80px, 20px) rotate(-5deg);
+  }
+  75% {
+    transform: translate(40px, 50px) rotate(15deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes curve2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-20px, -40px) rotate(-10deg);
+  }
+  50% {
+    transform: translate(60px, -10px) rotate(5deg);
+  }
+  80% {
+    transform: translate(-10px, 30px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes curve3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  30% {
+    transform: translate(30px, -20px) rotate(8deg);
+  }
+  60% {
+    transform: translate(50px, 40px) rotate(-6deg);
+  }
+  90% {
+    transform: translate(-20px, 10px) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.hero-plane {
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Randomly assign different motions */
+.hero-plane:nth-child(1) {
+  animation: curve1 8s infinite;
+}
+.hero-plane:nth-child(2) {
+  animation: curve2 10s infinite;
+}
+.hero-plane:nth-child(3) {
+  animation: curve3 12s infinite;
+}
+.hero-plane:nth-child(4) {
+  animation: curve1 9s infinite reverse;
+}
+
+:root {
+  /* Deep navy background and light foreground */
+  --background: #29366e;
+  --foreground: #c9c9c9;
+
+  /* Card/popover use same base with slight contrast */
+  --card: #0a0f1f;
+  --card-foreground: #e6f1ff;
+  --popover: #0a0f1f;
+  --popover-foreground: #e6f1ff;
+
+  /* Neon cyan as primary accent */
+  --primary: #00e5ff;
+  --primary-foreground: #001218;
+
+  /* Muted surfaces and borders (darker navies) */
+  --secondary: #0f162f;
+  --secondary-foreground: #e6f1ff;
+  --muted: #0f162f;
+  --muted-foreground: #b7c6e6;
+
+  --accent: #0f162f;
+  --accent-foreground: #e6f1ff;
+
+  /* Keep destructive conservative but unused here */
+  --destructive: #ff3b30;
+  --destructive-foreground: #0a0f1f;
+
+  --border: #1a2440;
+  --input: #1a2440;
+  --ring: #00e5ff;
+
+  /* Charts (kept but not used) */
+  --chart-1: #00e5ff;
+  --chart-2: #1a2440;
+  --chart-3: #b7c6e6;
+  --chart-4: #0f162f;
+  --chart-5: #e6f1ff;
+
+  --radius: 0.75rem;
+
+  /* Sidebar mirrors surface tokens */
+  --sidebar: #0a0f1f;
+  --sidebar-foreground: #e6f1ff;
+  --sidebar-primary: #00e5ff;
+  --sidebar-primary-foreground: #001218;
+  --sidebar-accent: #0f162f;
+  --sidebar-accent-foreground: #e6f1ff;
+  --sidebar-border: #1a2440;
+  --sidebar-ring: #00e5ff;
+}
+
+.dark {
+  /* Keep dark mode close to base to preserve brand look */
+  --background: #040914;
+  --foreground: #e6f1ff;
+
+  --card: #060c19;
+  --card-foreground: #e6f1ff;
+  --popover: #060c19;
+  --popover-foreground: #e6f1ff;
+
+  --primary: #00e5ff;
+  --primary-foreground: #001218;
+
+  --secondary: #0c1326;
+  --secondary-foreground: #e6f1ff;
+  --muted: #0c1326;
+  --muted-foreground: #a7b7da;
+
+  --accent: #0c1326;
+  --accent-foreground: #e6f1ff;
+
+  --destructive: #ff3b30;
+  --destructive-foreground: #0a0f1f;
+
+  --border: #172038;
+  --input: #172038;
+  --ring: #00e5ff;
+
+  --chart-1: #00e5ff;
+  --chart-2: #172038;
+  --chart-3: #a7b7da;
+  --chart-4: #0c1326;
+  --chart-5: #e6f1ff;
+
+  --sidebar: #060c19;
+  --sidebar-foreground: #e6f1ff;
+  --sidebar-primary: #00e5ff;
+  --sidebar-primary-foreground: #001218;
+  --sidebar-accent: #0c1326;
+  --sidebar-accent-foreground: #e6f1ff;
+  --sidebar-border: #172038;
+  --sidebar-ring: #00e5ff;
+}
+
+@theme inline {
+  /* bind font-sans to Inter variable */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* enable smooth scrolling for in-page navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* glass utility and glow helpers */
+.glass {
+  @apply bg-secondary/60 backdrop-blur-md border border-border;
+}
+.glow {
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.25),
+    0 0 2px rgba(0, 229, 255, 0.6) inset;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-slide-active .team-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.swiper-slide-next .team-card,
+.swiper-slide-prev .team-card {
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--foreground);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--accent);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
