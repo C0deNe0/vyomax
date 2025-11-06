@@ -26,7 +26,7 @@ export const teamMembers = [
     role: "Team Captain",
     description:
       "Oversees electronics design and team coordination with vision.",
-    image: "/",
+    image: "/teamMembers/prashasti.png",
   },
   {
     id: 5,
@@ -34,14 +34,14 @@ export const teamMembers = [
     role: "Report Manager",
     description:
       "Ensures precise documentation and streamlined project reporting.",
-    image: "/",
+    image: "/teamMembers/punit.png",
   },
   {
     id: 6,
     name: "Hithaishi",
     role: "Team Lead & Finance",
     description: "Manages operations, budgeting, and system efficiency.",
-    image: "/",
+    image: "/teamMembers/hitashi.png",
   },
   {
     id: 7,

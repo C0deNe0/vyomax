@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-20 sm:py-24 md:py-28 bg-gradient-to-b from-neutral-900 to-black text-white"
+      className="relative py-20 sm:py-24 md:py-28 bg-blue-950 text-white"
     >
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-center">

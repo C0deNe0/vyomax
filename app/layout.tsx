@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "We design, build, and innovate RC aircraft and drones with passion.",
     type: "website",
     locale: "en_US",
-    url: "https://VyomaX.example.com",
+    url: "https://vyomax.vercel.app",
     siteName: "Team VyomaX",
   },
   twitter: {
@@ -53,7 +53,6 @@ export default function RootLayout({
       <body
         className={`font-sans ${inter.variable} ${GeistSans.variable} ${GeistMono.variable} antialiased `}
       >
-        
         <Suspense fallback={null}>
           <Cursor />
           {children}
