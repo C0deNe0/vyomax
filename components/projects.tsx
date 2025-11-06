@@ -47,8 +47,8 @@ export default function Projects() {
   }, [active]);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-20 h-screen">
-      <div className="flex items-center justify-between flex-wrap gap-4">
+    <div className="mx-auto max-w-6xl px-4 py-20 md:h-screen">
+      <div className="flex items-center justify-between flex-wrap  gap-4">
         <h2 className="text-3xl md:text-4xl font-semibold">Projects</h2>
         <div className="flex items-center gap-2">
           <FilterButton

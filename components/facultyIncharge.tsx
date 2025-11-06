@@ -5,9 +5,9 @@ export const FacultyIncharge = () => {
   return (
     <section
       id="faculty"
-      className="min-h-screen bg-blue-950 text-white flex items-center justify-center overflow-hidden"
+      className="min-h-screen bg-blue-950 text-white flex items-center justify-center overflow-hidden "
     >
-      <div className="flex flex-col-reverse md:flex-row w-full h-full max-w-7xl mx-auto px-8 md:px-16 items-center justify-between gap-12">
+      <div className="flex flex-col-reverse md:flex-row w-full h-full max-w-7xl mx-auto px-8 md:px-16 items-center mb-9 justify-between gap-12">
         {/* Left - Image Card Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <div className="relative w-[320px] h-[420px] md:w-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-[0_0_45px_-10px_rgba(0,200,255,0.5)] border border-white/10 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm hover:scale-105 transition-transform duration-500">

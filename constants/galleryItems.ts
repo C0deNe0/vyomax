@@ -16,24 +16,23 @@ export const galleryItems: GalleryItem[] = [
     className: "md:col-span-5  sm:col-span-2",
   },
   {
-    title: "Component Design",
+    title: "Components",
     src: im2,
     className: "md:col-span-3 sm:col-span-1",
   },
   {
-    title: "Aerial Structure",
+    title: "Drone testing",
     src: appi,
     className: "md:col-span-3 md:row-span-2 sm:col-span-1",
   },
   {
-    title: "Innovation Flight",
+    title: "Drone team",
     src: group2,
     className: "md:col-span-5 sm:col-span-2",
   },
   {
-    title: "Performance Test",
+    title: "Workshop",
     src: group3,
     className: "md:col-span-5 sm:col-span-2",
   },
-  
 ];

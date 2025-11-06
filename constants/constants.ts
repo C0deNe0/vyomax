@@ -1,53 +1,54 @@
-import { describe } from "node:test";
-
 export const teamMembers = [
   {
     id: 1,
-    name: "Dhanush BV",
+    name: "Dhanush B.V.",
     role: "Technical Head",
-    description: "Drone Entusiastic",
+    description: "A drone enthusiast driving innovation in aerial systems.",
     image: "/teamMembers/dhanush.png",
   },
   {
     id: 2,
-    name: "Rahul S Koti",
+    name: "Rahul S. Koti",
     role: "Technical Head",
-    description: "Limbu timbu",
-    image: "/professional-headshot-drone-specialist.jpg",
+    description: "Passionate about drone technology and precision engineering.",
+    image: "/teamMembers/rahul.png",
   },
   {
     id: 3,
     name: "Bhuvan",
-    role: "",
-    description: "Leading mechanical design and structural engineering",
-    image: "/professional-headshot-mechanical-engineer.jpg",
+    role: "Structural Design Lead",
+    description: "Leads mechanical design and structural optimization efforts.",
+    image: "/teamMembers/bhuvan.png",
   },
   {
     id: 4,
     name: "Prashasthi",
     role: "Team Captain",
-    description: "Designing advanced electronics and power systems",
-    image: "/professional-headshot-electronics-engineer.jpg",
+    description:
+      "Oversees electronics design and team coordination with vision.",
+    image: "/",
   },
   {
     id: 5,
-    name: "Punit patil",
-    role: "Flight Operations",
-    description: "Managing flight operations and safety protocols",
-    image: "/professional-headshot-flight-operations-manager.jpg",
+    name: "Punit Patil",
+    role: "Report Manager",
+    description:
+      "Ensures precise documentation and streamlined project reporting.",
+    image: "/",
   },
   {
     id: 6,
     name: "Hithaishi",
-    role: "AI & Navigation",
-    description: "Developing AI algorithms and navigation systems",
-    image: "/professional-headshot-ai-engineer.jpg",
+    role: "Team Lead & Finance",
+    description: "Manages operations, budgeting, and system efficiency.",
+    image: "/",
   },
   {
     id: 7,
     name: "Naveen Hiremath",
-    role: "",
-    description: "",
+    role: "Developer",
+    description:
+      "Crafts digital systems and interfaces powering the team’s tech.",
     image: "/teamMembers/naveen.png",
   },
 ];

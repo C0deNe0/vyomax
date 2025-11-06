@@ -2,71 +2,70 @@
 
 export default function Contact() {
   return (
-    <div className="relative overflow-hidden">
-      <div className="relative mx-auto max-w-5xl px-4 py-24">
-        <h2 className="text-3xl md:text-4xl font-semibold">Get in Touch</h2>
-        <p className="mt-2 text-muted-foreground">
+    <section
+      id="contact"
+      className="relative py-20 sm:py-24 md:py-28 bg-gradient-to-b from-neutral-900 to-black text-white"
+    >
+      <div className="max-w-5xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center">
+          Get in Touch
+        </h2>
+        <p className="mt-2 text-center text-muted-foreground">
           Reach us on WhatsApp, email, or social media.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info Card */}
           <div className="glass rounded-xl p-6 shadow-lg backdrop-blur-md hover:shadow-2xl transition-all duration-300 flex flex-col gap-4">
-            {/* WhatsApp */}
             <a
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform glow"
               href="https://wa.me/7892433465"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: "#25D366" }} // WhatsApp green
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform glow"
+              style={{ backgroundColor: "#25D366" }}
             >
               WhatsApp
             </a>
 
-            {/* Email */}
             <a
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=teamvyomax@gmail.com&su=VyomaX%20Inquiry&body=Hi%2C%0A%0A"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: "#EA4335" }} // Gmail red
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform"
+              style={{ backgroundColor: "#EA4335" }}
             >
               Email
             </a>
 
-            {/* Instagram */}
             <a
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform "
               href="https://www.instagram.com/team_vyomax?igsh=cXh3M2U4N3YzOHF2"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform"
               style={{
                 background:
                   "linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5)",
-              }} // Instagram gradient
+              }}
             >
               Instagram
             </a>
 
-            {/* LinkedIn */}
             <a
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform "
               href="https://docs.google.com/forms/d/e/1FAIpQLSecRHqCqZOhifKI100pF45jEjhq3eNfUMU1TfqFvk7_Ir-NGg/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: "#0A66C2" }} // LinkedIn blue
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform"
+              style={{ backgroundColor: "#0A66C2" }}
             >
-              Join the club
+              Join the Club
             </a>
           </div>
 
           {/* Contact Form */}
           <form
-            className="glass rounded-xl p-6 grid grid-cols-1 gap-4 shadow-lg backdrop-blur-md hover:shadow-2xl transition-all duration-300"
             onSubmit={(e) => {
               e.preventDefault();
-              const form = e.currentTarget as HTMLFormElement;
-              const data = new FormData(form);
+              const data = new FormData(e.currentTarget);
               const subject = encodeURIComponent("Inquiry from VyomaX website");
               const body = encodeURIComponent(
                 `Name: ${data.get("name")}\nEmail: ${data.get(
@@ -75,6 +74,7 @@ export default function Contact() {
               );
               window.location.href = `mailto:contact@VyomaX.example.com?subject=${subject}&body=${body}`;
             }}
+            className="glass rounded-xl p-6 grid grid-cols-1 gap-4 shadow-lg backdrop-blur-md hover:shadow-2xl transition-all duration-300"
           >
             <div>
               <label htmlFor="name" className="text-sm text-muted-foreground">
@@ -88,6 +88,7 @@ export default function Contact() {
                 placeholder="Your name"
               />
             </div>
+
             <div>
               <label htmlFor="email" className="text-sm text-muted-foreground">
                 Email
@@ -101,6 +102,7 @@ export default function Contact() {
                 placeholder="you@example.com"
               />
             </div>
+
             <div>
               <label
                 htmlFor="message"
@@ -116,6 +118,7 @@ export default function Contact() {
                 placeholder="Tell us about your project..."
               />
             </div>
+
             <button
               type="submit"
               className="mt-2 inline-flex items-center justify-center rounded-lg px-5 py-3 bg-primary text-primary-foreground font-medium glow hover:scale-105 transition-transform"
@@ -125,6 +128,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -51,7 +51,7 @@ export default function Loader({ onComplete }) {
     >
       <h1
         ref={textRef}
-        className="text-5xl font-semibold font-mono tracking-wide overflow-hidden"
+        className="text-3xl md:text-5xl lg:text-7xl font-semibold  font-mono tracking-wide overflow-hidden"
       >
         {text.split("").map((char, i) => (
           <span key={i} className="inline-block opacity-0 translate-x-10">
