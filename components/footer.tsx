@@ -6,27 +6,11 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           <a
             className="hover:text-primary"
-            href="https://instagram.com"
+            href="https://www.instagram.com/team_vyomax?igsh=cXh3M2U4N3YzOHF2"
             target="_blank"
             rel="noopener noreferrer"
           >
             Instagram
-          </a>
-          <a
-            className="hover:text-primary"
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
-          </a>
-          <a
-            className="hover:text-primary"
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
           </a>
         </div>
       </div>
