@@ -1,4 +1,5 @@
 import type React from "react";
+import Head from "next/head";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
@@ -14,6 +15,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Team VyomaX",
+
+  icons: {
+    icon: "/favicon.ico",
+    
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    
+  },
   description:
     "We design, build, and innovate RC aircraft and drones with passion. Engineering, aerodynamics, and community at our core.",
   keywords: [
