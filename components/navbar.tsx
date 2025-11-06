@@ -8,7 +8,7 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#products", label: "Products" },
+  //   { href: "#products", label: "Products" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -41,7 +41,7 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl flex items-center justify-between">
         <a href="#home" className="flex font-semibold items-center text-2xl">
           <div className=" h-20 w-22 flex justify-center    ">
-            <img src="logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
           </div>
           <span className="text-primary pl-0">Team Vyomax</span>
         </a>
