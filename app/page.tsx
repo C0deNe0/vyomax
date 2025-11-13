@@ -40,9 +40,9 @@ export default function HomePage() {
         <section id="gallery">
           <GallerySection />
         </section>
-        <section>
+        {/* <section>
           <FacultyIncharge />
-        </section>
+        </section> */}
         <section id="about">
           <About />
         </section>
