@@ -25,7 +25,7 @@ export default function TeamCarousel({
   title = "Meet Our Team",
 }: TeamCarouselProps) {
   return (
-    <section className="bg-background h-screen text-foreground py-19 px-4">
+    <section className="bg-blue-950 h-[110vh] text-foreground py-19 px-4">
       <h2 className="text-4xl py-3 md:text-5xl font-semibold text-center mb-12 text-balance">
         {title}
       </h2>

@@ -34,15 +34,16 @@ export default function HomePage() {
         <section id="home">
           <Hero />
         </section>
-        <section id="video">
+        {/* <section id="video">
           <VideoSection />
+        </section> */}
+        <section>
+          <FacultyIncharge />
         </section>
         <section id="gallery">
           <GallerySection />
         </section>
-        {/* <section>
-          <FacultyIncharge />
-        </section> */}
+
         <section id="about">
           <About />
         </section>

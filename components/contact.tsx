@@ -1,11 +1,15 @@
 "use client";
 
+import { url } from "inspector";
+import StatsSection from "./ContactUsCards";
+
 export default function Contact() {
   return (
     <section
       id="contact"
       className="relative py-20 sm:py-24 md:py-28 bg-blue-950 text-white"
     >
+      {/* <StatsSection /> */}
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold text-center">
           Get in Touch
@@ -21,7 +25,7 @@ export default function Contact() {
               href="https://wa.me/7892433465"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform glow"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-white font-medium hover:scale-105 transition-transform "
               style={{ backgroundColor: "#25D366" }}
             >
               WhatsApp

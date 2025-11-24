@@ -30,7 +30,7 @@ export function GallerySection() {
         Our Journey in Frames ✈️
       </h2>
 
-      <BentoGrid className="max-w-3xl mx-auto ">
+      <BentoGrid className="max-w-4xl mx-auto ">
         {galleryItems.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -41,7 +41,7 @@ export function GallerySection() {
                   src={item.src}
                   alt={item.title}
                   fill
-                  className="object-contain object-center transition-transform duration-500 group-hover/bento:scale-105"
+                  className=" object-cover  object-center   transition-transform duration-500 group-hover/bento:scale-105"
                 />
               </div>
             }
