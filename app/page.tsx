@@ -6,7 +6,7 @@ import Projects from "@/components/projects";
 import Products from "@/components/products";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import { VivekAlva } from "@/components/vivekAlva";
+import { VivekAlva } from "@/components/VivekAlva";
 import { FacultyIncharge } from "@/components/facultyIncharge";
 import { GallerySection } from "@/components/gallerySection";
 import About from "@/components/about";
@@ -48,8 +48,7 @@ export default function HomePage() {
         <section id="book" className="bg-blue-950">
           <h3 className="text-white text-5xl m-5 p-5 font-bold flex justify-center items-center flex flex-col ">
             Our Journey
-                      <div className="w-26 h-[2px] bg-cyan-400 mt-1 mr-44 mb-4" />
-
+            <div className="w-26 h-[2px] bg-cyan-400 mt-1 mr-44 mb-4" />
           </h3>
           <Book />
         </section>
