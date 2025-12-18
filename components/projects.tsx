@@ -44,9 +44,9 @@ const allProjects: Project[] = [
   {
     id: "p5",
     title: "",
-    description: "simulated rc plane using controller.",
+    description: "simulated real plane using Thrustmaster controller.",
     image: "/images/controllers.png",
-    tags: ["Quadcopter"],
+    tags: ["Experimental"],
   },
   {
     id: "p6",
