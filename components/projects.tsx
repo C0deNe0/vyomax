@@ -34,6 +34,27 @@ const allProjects: Project[] = [
     image: "/rcPlane/img1.png",
     tags: ["Experimental", "Fixed Wing"],
   },
+  {
+    id: "p4",
+    title: "",
+    description: "Lightweight RC plane for aerobatic maneuvers.",
+    image: "/rcPlane/image.png",
+    tags: ["Fixed Wing"],
+  },
+  {
+    id: "p5",
+    title: "",
+    description: "simulated rc plane using controller.",
+    image: "/images/controllers.png",
+    tags: ["Quadcopter"],
+  },
+  {
+    id: "p6",
+    title: "",
+    description: "RC plane workshop and hands-on training.",
+    image: "/images/multiplanes.png",
+    tags: ["Experimental", "Quadcopter"],
+  },
 ];
 
 const TAGS: Project["tags"] = ["Fixed Wing", "Quadcopter", "Experimental"];
@@ -47,9 +68,13 @@ export default function Projects() {
   }, [active]);
 
   return (
-    <div className="mx-auto max-w-6xl  px-4 py-20 md:h-screen">
+    <div className="mx-auto max-w-6xl  px-4 py-20 md:h-screen  h-full">
       <div className="flex items-center justify-between flex-wrap  gap-4">
-        <h2 className="text-3xl md:text-4xl font-semibold">Projects</h2>
+        <div>
+          <h2 className="text-3xl md:text-4xl font-semibold">Projects</h2>
+          <div className="w-13 mt-0.5 h-1 bg-cyan-400" />
+        </div>
+
         <div className="flex items-center gap-2">
           <FilterButton
             label="All"

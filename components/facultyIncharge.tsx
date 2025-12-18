@@ -5,7 +5,7 @@ export const FacultyIncharge = () => {
   return (
     <section
       id="faculty"
-      className="min-h-screen bg-blue-950 text-white flex items-center justify-center overflow-hidden "
+      className="min-h-screen bg-[#d7dae511] text-white flex items-center justify-center overflow-hidden "
     >
       <div className="flex flex-col-reverse md:flex-row w-full h-full max-w-7xl mx-auto px-8 md:px-16 items-center mb-9 justify-between gap-12">
         {/* Left - Image Card Section */}
@@ -23,14 +23,15 @@ export const FacultyIncharge = () => {
 
         {/* Right - Text Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-left">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
-            Faculty Incharge
-          </h2>
+          <span className="text-sm uppercase tracking-widest text-cyan-400 mb-1" >
+            Mentor
+          </span>
 
-          <h3 className="text-2xl font-semibold mb-4">Mr. Ashok</h3>
+          <h2 className="text-4xl mb-1 md:text-5xl font-bold">Mr. Ashok </h2>
 
+          <div className="w-16 h-[2px] bg-cyan-400 mt-1 mb-4" />
           <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
-            Mr. Ashok has been a guiding light for our club since its inception.
+            Mr. Ashok has been a guiding light for our Team since its inception.
             From the very beginning, he plays a key role in building our
             foundation and helping us grow in the right direction. Serving as a
             mentor for both our NCC and club teams, he introduces us to the
@@ -40,12 +41,6 @@ export const FacultyIncharge = () => {
             enthusiasm continue to motivate us to push boundaries and strive for
             excellence.
           </p>
-
-          <div className="mt-8">
-            <span className="inline-block px-8 py-3 text-base font-semibold rounded-full border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black transition">
-              Always Supportive & Inspiring ✨
-            </span>
-          </div>
         </div>
       </div>
     </section>

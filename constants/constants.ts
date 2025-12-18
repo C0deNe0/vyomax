@@ -51,12 +51,4 @@ export const teamMembers = [
       "Crafts digital systems and interfaces powering the team’s tech.",
     image: "/teamMembers/naveen.png",
   },
-  {
-    id: 8,
-    name: "Punnya shree KN",
-    role: "Structural Designer",
-    description:
-      "Manages mechanical design and ensures optimal structural performance.",
-    image: "/teamMembers/punnya.png",
-  },
 ];

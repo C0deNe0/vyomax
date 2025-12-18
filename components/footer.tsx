@@ -1,3 +1,5 @@
+import { RiHeartFill, RiWhatsappLine } from "@remixicon/react";
+
 export default function Footer() {
   return (
     <footer className="mt-20 border-t border-border">
@@ -28,11 +30,15 @@ export default function Footer() {
         href="https://wa.me/7892433465"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 z-40 rounded-full bg-primary text-primary-foreground px-4 py-3 glow"
+        className="fixed bottom-5 right-5 z-40 rounded-full bg-primary text-primary-foreground px-3 py-2 glow"
         aria-label="Chat on WhatsApp"
         title="Chat on WhatsApp"
       >
-        WhatsApp
+        <RiWhatsappLine
+          size={26} // set custom `width` and `height`
+          color="black" // set `fill` color
+          className="my-icon" // add custom class name
+        />
       </a>
     </footer>
   );

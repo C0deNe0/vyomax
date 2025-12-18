@@ -41,7 +41,6 @@
 
 html,
 body {
-  overflow-x: hidden;
 }
 
 @keyframes curve1 {

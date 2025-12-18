@@ -27,7 +27,7 @@ export function GallerySection() {
   return (
     <section className="mt-12 text-center min-h-[150vh] mb-14">
       <h2 className="mb-12 text-4xl font-semibold text-white md:text-5xl">
-        Our Journey in Frames ✈️
+        Our Journey in Frames
       </h2>
 
       <BentoGrid className="max-w-4xl mx-auto ">

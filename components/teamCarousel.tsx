@@ -26,9 +26,12 @@ export default function TeamCarousel({
 }: TeamCarouselProps) {
   return (
     <section className="bg-blue-950 h-[110vh] text-foreground py-19 px-4">
+      {/* <div className="flex flex-col justify-center itece"> */}
       <h2 className="text-4xl py-3 md:text-5xl font-semibold text-center mb-12 text-balance">
         {title}
+        <div className="w-16 h-1 bg-cyan-400 ml-116 mb-4" />
       </h2>
+      {/* </div> */}
 
       <div className="max-w-7xl mx-auto relative">
         <Swiper
